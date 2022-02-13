@@ -1,7 +1,7 @@
 import { css } from "styled-components";
-import { GridOptions } from "../config/grid";
+import GridOptions from "config/grid";
 
-export const gridStyles = css<GridOptions>`
+const gridStyles = css<GridOptions>`
   display: grid;
   grid-gap: ${({ gridGap }) => gridGap};
   grid-column-gap: ${({ gridColumnGap }) => gridColumnGap};
@@ -19,3 +19,5 @@ export const gridStyles = css<GridOptions>`
   grid-row: ${({ gridRow }) => gridRow};
   grid-column: ${({ gridColumn }) => gridColumn};
 `;
+
+export default gridStyles;

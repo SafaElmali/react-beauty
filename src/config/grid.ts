@@ -1,7 +1,7 @@
 import * as CSS from "csstype";
-import { LayoutOptions } from "./layout";
+import LayoutOptions from "./layout";
 
-export interface GridOptions extends LayoutOptions {
+interface GridOptions extends LayoutOptions {
   /**
    * The CSS `grid-gap` property.
    *
@@ -151,3 +151,5 @@ export interface GridOptions extends LayoutOptions {
    */
   gridArea?: CSS.Property.GridArea;
 }
+
+export default GridOptions;

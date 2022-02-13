@@ -1,11 +1,17 @@
-import { BorderOptions } from "./border";
 import * as CSS from "csstype";
-import { SpaceOptions } from "./space";
+import BackgroundOptions from "./background";
+import BorderOptions from "./border";
+import ColorOptions from "./color";
+import SpaceOptions from "./space";
 
 /**
  * Types for layout related CSS properties
  */
-export interface LayoutOptions extends BorderOptions, SpaceOptions {
+interface LayoutOptions
+  extends BorderOptions,
+    SpaceOptions,
+    ColorOptions,
+    BackgroundOptions {
   /**
    * The CSS `display` property
    */
@@ -113,3 +119,5 @@ export interface LayoutOptions extends BorderOptions, SpaceOptions {
    */
   isolation?: CSS.Property.Isolation;
 }
+
+export default LayoutOptions;

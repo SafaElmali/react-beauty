@@ -1,7 +1,7 @@
 import { css } from "styled-components";
-import { SpaceOptions } from "../config/space";
+import SpaceOptions from "config/space";
 
-export const spaceStyles = css<SpaceOptions>`
+const spaceStyles = css<SpaceOptions>`
   margin: ${({ margin }) => margin};
   margin-block-start: ${({ marginBlockStart }) => marginBlockStart};
   margin-top: ${({ marginTop }) => marginTop};
@@ -25,3 +25,5 @@ export const spaceStyles = css<SpaceOptions>`
   padding-inline: ${({ paddingInline }) => paddingInline};
   padding-block: ${({ paddingBlock }) => paddingBlock};
 `;
+
+export default spaceStyles;

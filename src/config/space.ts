@@ -1,9 +1,9 @@
-import * as CSS from "csstype"
+import * as CSS from "csstype";
 
 /**
  * Types for space related CSS properties
  */
-export interface SpaceOptions {
+interface SpaceOptions {
   /**
    * Margin on top, left, bottom and right
    */
@@ -109,3 +109,5 @@ export interface SpaceOptions {
    */
   paddingY?: CSS.Property.Padding | number;
 }
+
+export default SpaceOptions;
