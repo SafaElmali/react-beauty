@@ -3,7 +3,7 @@ import * as CSS from "csstype";
 /**
  * The prop types for border properties listed above
  */
-export interface BorderOptions {
+interface BorderOptions {
   /**
    * The CSS `border` property
    */
@@ -235,3 +235,5 @@ export interface BorderOptions {
   borderY?: CSS.Property.Border | number;
   borderBlock?: CSS.Property.BorderBlock | number;
 }
+
+export default BorderOptions;
