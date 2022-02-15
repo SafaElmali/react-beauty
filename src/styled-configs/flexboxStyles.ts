@@ -4,6 +4,7 @@ import FlexboxOptions from 'config/flexbox';
 const flexboxStyles = css<FlexboxOptions>`
   align-content: ${({ alignContent }) => alignContent};
   align-items: ${({ alignItems }) => alignItems};
+  align-self: ${({ alignSelf }) => alignSelf};
   display: flex;
   flex-basis: ${({ flexBasis }) => flexBasis};
   flex-direction: ${({ flexDirection }) => flexDirection};

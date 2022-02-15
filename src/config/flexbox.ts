@@ -77,15 +77,6 @@ interface FlexboxOptions {
    */
   flexDirection?: CSS.Property.FlexDirection;
   /**
-   * The CSS `flex-direction` property.
-   *
-   * It defines how flex items are placed in the flex container
-   * defining the main axis and the direction (normal or reversed).
-   *
-   * @see [Mozilla Docs](https://developer.mozilla.org/docs/Web/CSS/flex-direction)
-   */
-  flexDir?: CSS.Property.FlexDirection;
-  /**
    * The CSS `flex` property.
    *
    * It defines how a flex item will grow or shrink
@@ -193,14 +184,6 @@ interface FlexboxOptions {
    * @see [Mozilla Docs](https://developer.mozilla.org/docs/Web/CSS/place-self)
    */
   placeSelf?: CSS.Property.PlaceSelf;
-  /**
-   * Controls the horizontal space between elements
-   */
-  experimental_spaceX?: CSS.Property.Margin;
-  /**
-   * Controls the vertical space between elements
-   */
-  experimental_spaceY?: CSS.Property.Margin;
 }
 
 export default FlexboxOptions;

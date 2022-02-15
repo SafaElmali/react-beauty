@@ -47,15 +47,7 @@ interface SpaceOptions {
    */
   marginLeft?: CSS.Property.MarginLeft | number;
   marginInline?: CSS.Property.MarginInline | number;
-  /**
-   * Margin on left and right
-   */
-  marginX?: CSS.Property.Margin | number;
   marginBlock?: CSS.Property.MarginBlock | number;
-  /**
-   * Margin on top and bottom
-   */
-  marginY?: CSS.Property.Margin | number;
   /**
    * Padding on top, left, bottom and right
    */
@@ -99,15 +91,7 @@ interface SpaceOptions {
    */
   paddingLeft?: CSS.Property.PaddingLeft | number;
   paddingInline?: CSS.Property.PaddingInline | number;
-  /**
-   * Padding on left and right
-   */
-  paddingX?: CSS.Property.Padding | number;
   paddingBlock?: CSS.Property.PaddingBlock | number;
-  /**
-   * Padding on top and bottom
-   */
-  paddingY?: CSS.Property.Padding | number;
 }
 
 export default SpaceOptions;
