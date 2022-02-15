@@ -1,14 +1,15 @@
-import { css } from "styled-components";
-import BackgroundOptions from "config/background";
+import { css } from 'styled-components';
+import BackgroundOptions from 'config/background';
 
 const backgroundStyles = css<BackgroundOptions>`
   background: ${({ bg }) => bg};
   background-clip: ${({ bgClip }) => bgClip};
   background-color: ${({ bgColor }) => bgColor};
-  background-image: ${({ bgImage }) => bgImage};
-  background-position: ${({ bgPos }) => bgPos};
+  background-image: ${({ bgImg }) => bgImg};
   background-repeat: ${({ bgRepeat }) => bgRepeat};
-  background-size: ${({ backgroundSize }) => backgroundSize};
+  background-position: ${({ bgPos }) => bgPos};
+  background-size: ${({ bgSize }) => bgSize};
+  background-attachment: ${({ bgAttachment }) => bgAttachment};
 `;
 
 export default backgroundStyles;

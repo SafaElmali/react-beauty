@@ -4,10 +4,6 @@ interface ColorOptions {
   /**
    * The CSS `color` property
    */
-  textColor?: CSS.Property.Color;
-  /**
-   * The CSS `color` property
-   */
   color?: CSS.Property.Color;
   /**
    * The CSS `fill` property for icon svgs and paths

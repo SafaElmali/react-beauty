@@ -1,5 +1,5 @@
-import { css } from "styled-components";
-import GridOptions from "config/grid";
+import { css } from 'styled-components';
+import GridOptions from 'config/grid';
 
 const gridStyles = css<GridOptions>`
   display: grid;
@@ -9,6 +9,8 @@ const gridStyles = css<GridOptions>`
   grid-column-start: ${({ gridColumnStart }) => gridColumnStart};
   grid-row-start: ${({ gridRowStart }) => gridRowStart};
   grid-row-end: ${({ gridRowEnd }) => gridRowEnd};
+  grid-template: ${({ gridTemplate }) => gridTemplate};
+  grid-column-end: ${({ gridColumnEnd }) => gridColumnEnd};
   grid-template-columns: ${({ gridTemplateColumns }) => gridTemplateColumns};
   grid-template-rows: ${({ gridTemplateRows }) => gridTemplateRows};
   grid-template-areas: ${({ gridTemplateAreas }) => gridTemplateAreas};

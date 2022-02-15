@@ -22,10 +22,6 @@ interface LayoutOptions
   width?: CSS.Property.Width | number;
   inlineSize?: CSS.Property.InlineSize | number;
   /**
-   * The CSS `width` and `height` property
-   */
-  boxSize?: CSS.Property.Width | number;
-  /**
    * The CSS `max-width` property
    */
   maxWidth?: CSS.Property.MaxWidth | number;
@@ -44,10 +40,6 @@ interface LayoutOptions
    * The CSS `max-height` property
    */
   maxHeight?: CSS.Property.MaxHeight | number;
-  /**
-   * The CSS `max-height` property
-   */
-  maxH?: CSS.Property.MaxHeight | number;
   maxBlockSize?: CSS.Property.MaxBlockSize | number;
   /**
    * The CSS `min-height` property
