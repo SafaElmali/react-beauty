@@ -1,8 +1,9 @@
-import * as CSS from "csstype";
-import BackgroundOptions from "./background";
-import BorderOptions from "./border";
-import ColorOptions from "./color";
-import SpaceOptions from "./space";
+import * as CSS from 'csstype';
+
+import BackgroundOptions from './background';
+import BorderOptions from './border';
+import ColorOptions from './color';
+import SpaceOptions from './space';
 
 /**
  * Types for layout related CSS properties
