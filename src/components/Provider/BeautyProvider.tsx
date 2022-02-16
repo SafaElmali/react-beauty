@@ -1,5 +1,5 @@
-import { Fragment } from 'react';
 import GlobalStyles from 'components/Provider/GlobalStyles';
+import { Fragment } from 'react';
 
 export interface BeautyProviderProps {
   children: React.ReactNode;

@@ -1,19 +1,21 @@
-import { css } from 'styled-components';
 import FlexboxOptions from 'config/flexbox';
+import { css } from 'styled-components';
 
 const flexboxStyles = css<FlexboxOptions>`
   align-content: ${({ alignContent }) => alignContent};
   align-items: ${({ alignItems }) => alignItems};
   align-self: ${({ alignSelf }) => alignSelf};
+  column-gap: ${({ columnGap }) => columnGap};
   display: flex;
+  flex: ${({ flex }) => flex};
   flex-basis: ${({ flexBasis }) => flexBasis};
+  flex-basis: ${({ flexBasis }) => flexBasis};
+  flex-direction: ${({ flexDirection }) => flexDirection};
   flex-direction: ${({ flexDirection }) => flexDirection};
   flex-flow: ${({ flexFlow }) => flexFlow};
-  flex-wrap: ${({ flexWrap }) => flexWrap};
-  flex-basis: ${({ flexBasis }) => flexBasis};
   flex-grow: ${({ flexGrow }) => flexGrow};
-  flex-direction: ${({ flexDirection }) => flexDirection};
   flex-shrink: ${({ flexShrink }) => flexShrink};
+  flex-wrap: ${({ flexWrap }) => flexWrap};
   gap: ${({ gap }) => gap};
   justify-content: ${({ justifyContent }) => justifyContent};
   justify-items: ${({ justifyItems }) => justifyItems};
@@ -23,8 +25,6 @@ const flexboxStyles = css<FlexboxOptions>`
   place-items: ${({ placeItems }) => placeItems};
   place-self: ${({ placeSelf }) => placeSelf};
   row-gap: ${({ rowGap }) => rowGap};
-  column-gap: ${({ columnGap }) => columnGap};
-  flex: ${({ flex }) => flex};
 `;
 
 export default flexboxStyles;

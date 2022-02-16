@@ -1,4 +1,4 @@
-import * as CSS from "csstype";
+import * as CSS from 'csstype';
 
 /**
  * Types for space related CSS properties

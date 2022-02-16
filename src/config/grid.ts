@@ -1,5 +1,6 @@
-import * as CSS from "csstype";
-import LayoutOptions from "./layout";
+import * as CSS from 'csstype';
+
+import LayoutOptions from './layout';
 
 interface GridOptions extends LayoutOptions {
   /**

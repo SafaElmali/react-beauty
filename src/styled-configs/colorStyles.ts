@@ -1,5 +1,5 @@
-import { css } from "styled-components";
-import ColorOptions from "config/color";
+import ColorOptions from 'config/color';
+import { css } from 'styled-components';
 
 const colorStyles = css<ColorOptions>`
   color: ${({ color }) => color};

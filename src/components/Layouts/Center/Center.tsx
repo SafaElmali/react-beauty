@@ -1,4 +1,5 @@
 import LayoutOptions from 'config/layout';
+
 import Flex from '../Flex/Flex';
 
 export interface CenterProps extends LayoutOptions {
@@ -9,12 +10,7 @@ const Center = (props: CenterProps) => {
   const { children } = props;
 
   return (
-    <Flex
-      display={'flex'}
-      justifyContent={'center'}
-      alignItems={'center'}
-      {...props}
-    >
+    <Flex display={'flex'} justifyContent={'center'} alignItems={'center'} {...props}>
       {children}
     </Flex>
   );

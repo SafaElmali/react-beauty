@@ -1,4 +1,5 @@
 import FlexboxOptions from 'config/flexbox';
+
 import StyledFlex from './StyledFlex';
 
 export interface FlexboxProps extends FlexboxOptions {
