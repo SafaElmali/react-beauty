@@ -1,0 +1,40 @@
+{
+  "src/**/*.{js,jsx}": [
+    "eslint",
+    "eslint --fix",
+    "prettier --write",
+    "git add"
+  ],
+  "src/**/*.{ts,tsx}": [
+    "eslint --ext .ts,.tsx",
+    "eslint --fix --ext .ts,.tsx",
+    "prettier --write --ext .ts,.tsx",
+    "git add"
+  ],
+  "*.{md,markdown}": [
+    "prettier --write",
+    "prettier --write --parser markdown",
+    "git add"
+  ],
+  "*.{json,json5,jsonc}": [
+    "prettier --write",
+    "prettier --write --parser json",
+    "git add"
+  ],
+  "*.{yml,yaml}": [
+    "prettier --write",
+    "prettier --write --parser yaml",
+    "git add"
+  ],
+  "*.{html,htm}": [
+    "prettier --write",
+    "prettier --write --parser html",
+    "git add"
+  ],
+  "*.{css,scss,sass}": [
+    "prettier --write",
+    "prettier --write --parser css",
+    "git add"
+  ],
+  "*.{png,jpeg,jpg,gif,svg}": "imagemin-lint-staged"
+}
