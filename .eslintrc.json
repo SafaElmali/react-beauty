@@ -33,7 +33,13 @@
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended" // Make sure this is always the last element in the array.
   ],
-  "plugins": ["better-styled-components", "simple-import-sort", "import", "prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "better-styled-components",
+    "simple-import-sort",
+    "import",
+    "prettier"
+  ],
   "rules": {
     "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
     "react/react-in-jsx-scope": "off",
