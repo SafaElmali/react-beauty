@@ -17,9 +17,7 @@
 
 ## Installation
 
-Inside your React project directory, install React Beauty by running either of the following:
-
-`npm i react-beauty`
+Soon..
 
 ### Set up Provider
 
@@ -47,12 +45,11 @@ Now you are ready to start using components 🥳
 
 ## Storybook
 
-Access Public Storybook [in here](https://61bf02a98b82d5003a56087a-boidushmnv.chromatic.com)
+Soon..
 
 ## Documentation
 
-Access Public Documentation [in here](https://safaelmalidev.gitbook.io/design-system/)
-
+Soon..
 
 ## License
 
