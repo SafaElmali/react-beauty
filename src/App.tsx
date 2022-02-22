@@ -1,5 +1,12 @@
+import { VFlex } from 'components/Layouts/Flex/Flex';
+
 const App = () => {
-  return <h1>Hello World</h1>;
+  return (
+    <VFlex>
+      <p>Hello world</p>
+      <button>hello</button>
+    </VFlex>
+  );
 };
 
 export default App;

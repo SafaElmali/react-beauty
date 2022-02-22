@@ -1,12 +1,12 @@
 import LayoutOptions from 'config/layout';
 
-import Flex from '../Flex/Flex';
+import { Flex } from '../Flex/Flex';
 
 export interface CenterProps extends LayoutOptions {
   children: React.ReactNode;
 }
 
-const Center = (props: CenterProps) => {
+export const Center = (props: CenterProps) => {
   const { children } = props;
 
   return (
@@ -15,5 +15,3 @@ const Center = (props: CenterProps) => {
     </Flex>
   );
 };
-
-export default Center;

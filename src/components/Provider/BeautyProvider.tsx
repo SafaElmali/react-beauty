@@ -5,7 +5,7 @@ export interface BeautyProviderProps {
   children: React.ReactNode;
 }
 
-const BeautyProvider = ({ children }: BeautyProviderProps) => {
+export const BeautyProvider = ({ children }: BeautyProviderProps) => {
   return (
     <Fragment>
       <GlobalStyles />
@@ -13,5 +13,3 @@ const BeautyProvider = ({ children }: BeautyProviderProps) => {
     </Fragment>
   );
 };
-
-export default BeautyProvider;

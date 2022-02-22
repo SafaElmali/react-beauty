@@ -6,10 +6,28 @@ export interface FlexboxProps extends FlexboxOptions {
   children: React.ReactNode;
 }
 
-const Flex = (props: FlexboxProps) => {
+export const Flex = (props: FlexboxProps) => {
   const { children } = props;
 
   return <StyledFlex {...props}>{children}</StyledFlex>;
 };
 
-export default Flex;
+export const HFlex = (props: FlexboxProps) => {
+  const { children } = props;
+
+  return (
+    <Flex alignItems="center" flexDirection="row" {...props}>
+      {children}
+    </Flex>
+  );
+};
+
+export const VFlex = (props: FlexboxProps) => {
+  const { children } = props;
+
+  return (
+    <Flex alignItems="center" flexDirection="column" {...props}>
+      {children}
+    </Flex>
+  );
+};
