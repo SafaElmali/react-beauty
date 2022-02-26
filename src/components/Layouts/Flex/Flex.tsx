@@ -1,8 +1,9 @@
 import FlexboxOptions from 'config/flexbox';
+import LayoutOptions from 'config/layout';
 
 import StyledFlex from './StyledFlex';
 
-export interface FlexboxProps extends FlexboxOptions {
+export interface FlexboxProps extends LayoutOptions, FlexboxOptions {
   children: React.ReactNode;
 }
 

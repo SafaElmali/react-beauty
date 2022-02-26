@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap');
+
+
     *, *::before, *::after {
     box-sizing: border-box;
     }
@@ -11,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
 
     html, body {
     height: 100%;
+    font-family: 'Inter', sans-serif;
     }
 
     body {
@@ -34,7 +38,6 @@ const GlobalStyles = createGlobalStyle`
     #root, #__next {
     isolation: isolate;
     }
-
 `;
 
 export default GlobalStyles;
