@@ -25,7 +25,7 @@ interface LayoutOptions
   /**
    * The CSS `max-width` property
    */
-  maxWidth?: CSS.Property.MaxWidth | number;
+  maxWidth?: CSS.Property.MaxWidth | number | 'sm' | 'md' | 'lg' | 'xl';
   maxInlineSize?: CSS.Property.MaxInlineSize | number;
   /**
    * The CSS `min-width` property

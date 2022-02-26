@@ -13,7 +13,7 @@ const layoutStyles = css<LayoutOptions>`
   max-block-size: ${({ maxBlockSize }) => maxBlockSize};
   max-height: ${({ maxHeight }) => maxHeight};
   max-inline-size: ${({ maxInlineSize }) => maxInlineSize};
-  max-width: ${({ maxWidth }) => maxWidth};
+  ${({ maxWidth }) => setMaxWidth(maxWidth) || maxWidth};
   min-block-size: ${({ minBlockSize }) => minBlockSize};
   min-height: ${({ minHeight }) => minHeight};
   min-inline-size: ${({ minInlineSize }) => minInlineSize};
@@ -32,3 +32,16 @@ const layoutStyles = css<LayoutOptions>`
 `;
 
 export default layoutStyles;
+
+const setMaxWidth = (maxWidth: any) => {
+  switch (maxWidth) {
+    case 'sm':
+      return `max-width: 640px`;
+    case 'md':
+      return `max-width: 768px`;
+    case 'lg':
+      return `max-width: 1024px`;
+    case 'xl':
+      return `max-width: 1280px`;
+  }
+};
