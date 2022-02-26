@@ -17,7 +17,7 @@ export const HFlex = (props: FlexboxProps) => {
   const { children } = props;
 
   return (
-    <Flex alignItems="center" flexDirection="row" {...props}>
+    <Flex flexDirection="row" {...props}>
       {children}
     </Flex>
   );
@@ -27,7 +27,7 @@ export const VFlex = (props: FlexboxProps) => {
   const { children } = props;
 
   return (
-    <Flex alignItems="center" flexDirection="column" {...props}>
+    <Flex flexDirection="column" {...props}>
       {children}
     </Flex>
   );
