@@ -1,11 +1,13 @@
-import { VFlex } from 'components/Layouts/Flex/Flex';
+import { Container } from 'components/Layouts/Container/Container';
 
 const App = () => {
   return (
-    <VFlex>
-      <p>Hello world</p>
-      <button>hello</button>
-    </VFlex>
+    <>
+      <Container maxWidth="xl">Extra-Large Container</Container>
+      <Container maxWidth="lg">Large Container</Container>
+      <Container maxWidth="md">Medium Container</Container>
+      <Container maxWidth="sm">Small Container</Container>
+    </>
   );
 };
 
